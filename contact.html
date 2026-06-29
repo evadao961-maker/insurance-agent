@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Sanjay Kumar Singh - LIC Insurance Agent</title>
+<meta name="description" content="Get in touch with Sanjay Kumar Singh, your local LIC Insurance Agent. Call, WhatsApp, or email for policy advice, premium quotes, or claim assistance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+  /* ============ TOKENS ============ */
+  :root{
+    --navy: #0B2545;
+    --navy-deep: #071a33;
+    --gold: #C9A24B;
+    --gold-light: #E2C77F;
+    --cream: #F7F5F1;
+    --paper: #FFFDF9;
+    --ink: #1E1E1E;
+    --ink-soft: #4A4A48;
+    --line: #D8D2C4;
+    --whatsapp: #3D8361;
+    --whatsapp-deep: #2f684c;
+
+    --display: "Fraunces", Georgia, serif;
+    --body: "Inter", -apple-system, Segoe UI, Roboto, sans-serif;
+
+    --radius: 10px;
+    --container: 1120px;
+  }
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+
+  html{ scroll-behavior:smooth; }
+
+  body{
+    font-family: var(--body);
+    color: var(--ink);
+    background: var(--cream);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img{ max-width:100%; display:block; }
+
+  a{ color:inherit; text-decoration:none; }
+
+  :focus-visible{
+    outline: 3px solid var(--gold);
+    outline-offset: 2px;
+  }
+
+  .container{
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ============ TICKER / TOP STRIP ============ */
+  .top-strip{
+    background: var(--navy-deep);
+    color: var(--gold-light);
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    text-align: center;
+    padding: 7px 14px;
+    font-weight: 500;
+  }
+
+  /* ============ HEADER / NAV ============ */
+  header{
+    background: var(--navy);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 14px rgba(7,26,51,0.18);
+  }
+
+  .nav-wrap{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 14px 24px;
+    max-width: var(--container);
+    margin: 0 auto;
+  }
+
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color: var(--cream);
+  }
+
+  .brand-badge{
+    width:44px; height:44px;
+    border-radius: 50%;
+    background: linear-gradient(155deg, var(--gold-light), var(--gold));
+    color: var(--navy-deep);
+    display:flex; align-items:center; justify-content:center;
+    font-family: var(--display);
+    font-weight:700;
+    font-size:1.05rem;
+    flex-shrink:0;
+    border: 2px solid rgba(255,255,255,0.25);
+  }
+
+  .brand-text .name{
+    font-family: var(--display);
+    font-size: 1.18rem;
+    font-weight:600;
+    letter-spacing: 0.01em;
+    line-height:1.1;
+  }
+
+  .brand-text .role{
+    font-size: 0.72rem;
+    color: var(--gold-light);
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+
+  nav.main-nav{
+    display:flex;
+    align-items:center;
+    gap: 6px;
+  }
+
+  nav.main-nav a{
+    color: rgba(247,245,241,0.88);
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  nav.main-nav a:hover{
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+  }
+
+  nav.main-nav a.active{
+    background: rgba(255,255,255,0.1);
+    color: var(--gold-light);
+  }
+
+  nav.main-nav a.nav-cta{
+    background: var(--gold);
+    color: var(--navy-deep);
+    font-weight:600;
+    margin-left: 6px;
+  }
+
+  nav.main-nav a.nav-cta:hover{
+    background: var(--gold-light);
+  }
+
+  /* mobile nav toggle */
+  .nav-toggle{
+    display:none;
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding: 8px;
+  }
+  .nav-toggle span{
+    display:block;
+    width:26px; height:2px;
+    background: var(--cream);
+    margin: 6px 0;
+    transition: 0.25s;
+  }
+
+  /* ============ PAGE HERO ============ */
+  .page-hero{
+    background:
+      radial-gradient(circle at 85% 20%, rgba(201,162,75,0.16), transparent 55%),
+      linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);
+    color: var(--cream);
+    padding: 56px 0 64px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .page-hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image: repeating-linear-gradient(
+      0deg, rgba(255,255,255,0.025) 0px, rgba(255,255,255,0.025) 1px, transparent 1px, transparent 34px
+    );
+    pointer-events:none;
+  }
+
+  .page-hero .inner{
+    position:relative;
+    z-index:1;
+    max-width: 640px;
+  }
+
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    color: var(--gold-light);
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight:600;
+    margin-bottom: 18px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:28px; height:1px;
+    background: var(--gold-light);
+  }
+
+  .page-hero h1{
+    font-family: var(--display);
+    font-size: clamp(2rem, 4vw, 2.9rem);
+    font-weight:600;
+    line-height:1.16;
+    margin-bottom: 14px;
+  }
+
+  .page-hero h1 em{
+    font-style: italic;
+    color: var(--gold-light);
+    font-weight:500;
+  }
+
+  .page-hero p.lede{
+    font-size: 1.05rem;
+    color: rgba(247,245,241,0.82);
+  }
+
+  .breadcrumb{
+    display:flex;
+    gap:8px;
+    align-items:center;
+    font-size:0.85rem;
+    color: rgba(247,245,241,0.55);
+    margin-top: 22px;
+  }
+  .breadcrumb a{ color: rgba(247,245,241,0.8); }
+  .breadcrumb a:hover{ color: var(--gold-light); }
+
+  /* ============ SECTION GENERIC ============ */
+  section{
+    padding: 84px 0;
+  }
+
+  .section-head{
+    max-width: 640px;
+    margin-bottom: 44px;
+  }
+
+  .section-head .eyebrow{ color: var(--whatsapp-deep); }
+  .section-head .eyebrow::before{ background: var(--whatsapp-deep); }
+
+  .section-head h2{
+    font-family: var(--display);
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight:600;
+    color: var(--navy);
+    line-height:1.2;
+  }
+
+  .section-head p{
+    color: var(--ink-soft);
+    margin-top: 14px;
+    font-size: 1.02rem;
+  }
+
+  .band-paper{
+    background: var(--paper);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  /* ============ CONTACT METHOD CARDS ============ */
+  .contact-methods{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: -132px;
+    position: relative;
+    z-index: 5;
+  }
+
+  .method-card{
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 32px 28px;
+    box-shadow: 0 20px 44px rgba(11,37,69,0.14);
+    transition: transform 0.25s, box-shadow 0.25s;
+    display:flex;
+    flex-direction:column;
+  }
+
+  .method-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 26px 54px rgba(11,37,69,0.18);
+  }
+
+  .method-card .icon{
+    width: 54px; height:54px;
+    border-radius: 12px;
+    display:flex; align-items:center; justify-content:center;
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+  }
+
+  .method-card.call .icon{ background: var(--navy); color: var(--gold-light); }
+  .method-card.wa .icon{ background: var(--whatsapp); color: #fff; }
+  .method-card.mail .icon{ background: var(--gold); color: var(--navy-deep); }
+
+  .method-card h3{
+    font-family: var(--display);
+    font-size: 1.18rem;
+    color: var(--navy);
+    margin-bottom: 6px;
+    font-weight:600;
+  }
+
+  .method-card .detail{
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+    word-break: break-word;
+  }
+
+  .method-card .sub{
+    color: var(--ink-soft);
+    font-size: 0.88rem;
+    margin-bottom: 20px;
+  }
+
+  .method-card .go-btn{
+    margin-top: auto;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap: 8px;
+    padding: 12px 20px;
+    border-radius: 7px;
+    font-weight:600;
+    font-size: 0.92rem;
+    transition: background 0.2s, transform 0.2s;
+  }
+
+  .method-card.call .go-btn{ background: var(--navy); color:#fff; }
+  .method-card.call .go-btn:hover{ background: var(--navy-deep); transform: translateY(-2px); }
+
+  .method-card.wa .go-btn{ background: var(--whatsapp); color:#fff; }
+  .method-card.wa .go-btn:hover{ background: var(--whatsapp-deep); transform: translateY(-2px); }
+
+  .method-card.mail .go-btn{ background: var(--gold); color: var(--navy-deep); }
+  .method-card.mail .go-btn:hover{ background: var(--gold-light); transform: translateY(-2px); }
+
+  /* ============ "WHAT'S THIS ABOUT" QUICK PICKS (creative WA preload) ============ */
+  .quick-topics{
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 36px 32px;
+  }
+
+  .quick-topics h3{
+    font-family: var(--display);
+    font-size: 1.3rem;
+    color: var(--navy);
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+
+  .quick-topics .hint{
+    color: var(--ink-soft);
+    font-size: 0.94rem;
+    margin-bottom: 22px;
+  }
+
+  .topic-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 26px;
+  }
+
+  .topic-chip{
+    display:flex;
+    align-items:center;
+    gap: 12px;
+    background: var(--cream);
+    border: 1.5px solid var(--line);
+    border-radius: 10px;
+    padding: 14px 16px;
+    cursor:pointer;
+    transition: border-color 0.2s, background 0.2s, transform 0.15s;
+    text-align:left;
+    font-family: inherit;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .topic-chip:hover{
+    border-color: var(--gold);
+    transform: translateY(-2px);
+  }
+
+  .topic-chip.selected{
+    border-color: var(--whatsapp);
+    background: rgba(61,131,97,0.08);
+    color: var(--whatsapp-deep);
+  }
+
+  .topic-chip .emoji{ font-size: 1.3rem; flex-shrink:0; }
+
+  .preview-box{
+    background: var(--cream);
+    border: 1px dashed var(--line);
+    border-radius: 10px;
+    padding: 16px 18px;
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+    margin-bottom: 22px;
+    display:flex;
+    gap: 12px;
+    align-items:flex-start;
+  }
+
+  .preview-box .quote-mark{
+    font-family: var(--display);
+    font-size: 1.8rem;
+    color: var(--gold);
+    line-height: 0.6;
+    flex-shrink:0;
+  }
+
+  .preview-box #previewText{
+    color: var(--navy);
+    font-weight: 500;
+  }
+
+  .send-wa-btn{
+    display:inline-flex;
+    align-items:center;
+    gap: 10px;
+    background: var(--whatsapp);
+    color:#fff;
+    padding: 14px 28px;
+    border-radius: 7px;
+    font-weight:700;
+    font-size: 0.98rem;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    border:none;
+    cursor:pointer;
+  }
+  .send-wa-btn:hover{
+    background: var(--whatsapp-deep);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(61,131,97,0.3);
+  }
+
+  /* ============ FORM + INFO LAYOUT ============ */
+  .contact-layout{
+    display:grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 48px;
+    align-items:start;
+  }
+
+  .form-card{
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 36px 32px;
+  }
+
+  .form-card h3{
+    font-family: var(--display);
+    font-size: 1.3rem;
+    color: var(--navy);
+    margin-bottom: 6px;
+    font-weight:600;
+  }
+
+  .form-card .hint{
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+    margin-bottom: 26px;
+  }
+
+  .form-row{
+    display:grid;
+    gap: 6px;
+    margin-bottom: 18px;
+  }
+
+  .form-row.two-col{
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  .form-row.two-col .field{ display:grid; gap:6px; }
+
+  .form-row label{
+    font-size: 0.85rem;
+    font-weight:600;
+    color: var(--navy);
+  }
+
+  .form-row input,
+  .form-row select,
+  .form-row textarea{
+    border: 1.5px solid var(--line);
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: var(--ink);
+    background: #fff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    width: 100%;
+  }
+
+  .form-row input:focus,
+  .form-row select:focus,
+  .form-row textarea:focus{
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(201,162,75,0.15);
+    outline: none;
+  }
+
+  .form-row textarea{ resize: vertical; min-height: 110px; }
+
+  .form-submit{
+    display:flex;
+    gap: 12px;
+    align-items:center;
+    margin-top: 8px;
+    flex-wrap: wrap;
+  }
+
+  .form-submit .note{
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+  }
+
+  /* ============ SIDE INFO STACK ============ */
+  .info-stack{
+    display:grid;
+    gap: 20px;
+  }
+
+  .info-card{
+    background: var(--navy);
+    color: var(--cream);
+    border-radius: 14px;
+    padding: 28px 26px;
+  }
+
+  .info-card h4{
+    font-family: var(--display);
+    font-size: 1.08rem;
+    color: var(--gold-light);
+    margin-bottom: 14px;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    gap: 10px;
+  }
+
+  .hours-row{
+    display:flex;
+    justify-content:space-between;
+    padding: 9px 0;
+    font-size: 0.92rem;
+    border-bottom: 1px solid rgba(247,245,241,0.1);
+  }
+  .hours-row:last-child{ border-bottom:none; }
+  .hours-row .day{ color: rgba(247,245,241,0.75); }
+  .hours-row .time{ font-weight:600; }
+  .hours-row .time.open{ color: var(--gold-light); }
+
+  .info-card.light{
+    background: var(--paper);
+    color: var(--ink);
+    border: 1px solid var(--line);
+  }
+  .info-card.light h4{ color: var(--navy); }
+
+  .area-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .area-tag{
+    background: var(--cream);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 0.82rem;
+    font-weight:600;
+    color: var(--navy);
+  }
+
+  .placeholder-note{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    background: rgba(201,162,75,0.12);
+    border: 1px dashed var(--gold);
+    color: var(--navy);
+    font-size: 0.74rem;
+    font-weight:600;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-top: 12px;
+  }
+  .placeholder-note::before{ content:"✏️"; }
+
+  /* ============ RESPONSE TIME STRIP ============ */
+  .response-strip{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap: 14px;
+    background: rgba(61,131,97,0.08);
+    border: 1px dashed var(--whatsapp);
+    border-radius: 999px;
+    padding: 14px 26px;
+    margin: 0 auto 0;
+    max-width: 560px;
+    font-size: 0.92rem;
+    color: var(--whatsapp-deep);
+    font-weight:600;
+    text-align:center;
+  }
+  .response-strip .pulse-dot{
+    width: 10px; height:10px;
+    border-radius:50%;
+    background: var(--whatsapp);
+    flex-shrink:0;
+    animation: dot-pulse 1.8s infinite;
+  }
+  @keyframes dot-pulse{
+    0%, 100%{ box-shadow: 0 0 0 0 rgba(61,131,97,0.5); }
+    70%{ box-shadow: 0 0 0 8px rgba(61,131,97,0); }
+  }
+
+  /* ============ FOOTER ============ */
+  footer{
+    background: var(--navy-deep);
+    color: rgba(247,245,241,0.78);
+    padding-top: 56px;
+  }
+
+  .footer-nav{
+    display:flex;
+    justify-content:center;
+    gap: 6px;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(247,245,241,0.12);
+    margin-bottom: 30px;
+  }
+
+  .footer-nav a{
+    color: var(--cream);
+    font-weight:600;
+    font-size: 0.98rem;
+    padding: 12px 26px;
+    border: 1px solid rgba(247,245,241,0.18);
+    border-radius: 8px;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+  }
+
+  .footer-nav a:hover{
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--navy-deep);
+  }
+
+  .footer-grid{
+    display:grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+  }
+
+  .footer-brand .name{
+    font-family: var(--display);
+    color: var(--cream);
+    font-size: 1.2rem;
+    font-weight:600;
+    margin-bottom: 10px;
+  }
+
+  .footer-brand p{
+    font-size: 0.92rem;
+    max-width: 320px;
+    line-height: 1.7;
+  }
+
+  .footer-col h4{
+    color: var(--cream);
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    font-weight:600;
+  }
+
+  .footer-col ul{
+    list-style:none;
+    display:grid;
+    gap: 10px;
+    font-size: 0.92rem;
+  }
+
+  .footer-col a:hover{ color: var(--gold-light); }
+
+  .footer-bottom{
+    text-align:center;
+    font-size: 0.82rem;
+    padding: 22px 0;
+    border-top: 1px solid rgba(247,245,241,0.1);
+    color: rgba(247,245,241,0.5);
+  }
+
+  /* ============ WHATSAPP FLOAT BUTTON ============ */
+  .whatsapp-float{
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 999;
+    background: var(--whatsapp);
+    color:#fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow: 0 10px 26px rgba(0,0,0,0.28);
+    transition: transform 0.2s, background 0.2s;
+    animation: wa-pulse 2.6s infinite;
+  }
+
+  .whatsapp-float:hover{
+    background: var(--whatsapp-deep);
+    transform: scale(1.07);
+  }
+
+  .whatsapp-float svg{ width: 30px; height:30px; }
+
+  @keyframes wa-pulse{
+    0%   { box-shadow: 0 10px 26px rgba(0,0,0,0.28), 0 0 0 0 rgba(61,131,97,0.45); }
+    70%  { box-shadow: 0 10px 26px rgba(0,0,0,0.28), 0 0 0 14px rgba(61,131,97,0); }
+    100% { box-shadow: 0 10px 26px rgba(0,0,0,0.28), 0 0 0 0 rgba(61,131,97,0); }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .whatsapp-float{ animation: none; }
+    *{ scroll-behavior:auto !important; }
+  }
+
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding: 14px 26px;
+    border-radius: 7px;
+    font-weight:600;
+    font-size: 0.98rem;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    border: none;
+    cursor:pointer;
+  }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 980px){
+    .contact-methods{ grid-template-columns: 1fr; margin-top: -90px; }
+    .topic-grid{ grid-template-columns: repeat(2, 1fr); }
+    .contact-layout{ grid-template-columns: 1fr; }
+    .form-row.two-col{ grid-template-columns: 1fr; }
+    .footer-grid{ grid-template-columns: 1fr 1fr; }
+    .footer-brand{ grid-column: 1 / -1; }
+  }
+
+  @media (max-width: 760px){
+    nav.main-nav{
+      position: fixed;
+      top: 0; right: 0;
+      height: 100vh;
+      width: min(78vw, 320px);
+      background: var(--navy-deep);
+      flex-direction: column;
+      align-items: stretch;
+      justify-content:flex-start;
+      padding: 90px 24px 24px;
+      gap: 4px;
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+      box-shadow: -8px 0 30px rgba(0,0,0,0.3);
+    }
+    nav.main-nav.open{ transform: translateX(0); }
+    nav.main-nav a{ padding: 14px 16px; font-size:1.02rem; }
+    nav.main-nav a.nav-cta{ margin-left:0; margin-top: 10px; text-align:center; }
+    .nav-toggle{ display:block; }
+
+    .page-hero{ padding: 44px 0 110px; }
+    .contact-methods{ margin-top: -76px; }
+
+    section{ padding: 56px 0; }
+    .topic-grid{ grid-template-columns: 1fr; }
+    .quick-topics{ padding: 26px 20px; }
+    .form-card{ padding: 26px 20px; }
+    .footer-grid{ grid-template-columns: 1fr; gap: 28px; }
+    .footer-nav{ gap: 10px; }
+    .footer-nav a{ padding: 10px 18px; font-size:0.9rem; }
+    .whatsapp-float{ bottom:18px; right:18px; width:56px; height:56px; }
+    .response-strip{ flex-direction:column; gap: 8px; padding: 16px 20px; }
+  }
+
+  @media (max-width: 420px){
+    .brand-text .name{ font-size: 1.02rem; }
+    .page-hero h1{ font-size: 1.7rem; }
+  }
+
+  /* overlay for mobile nav */
+  .nav-overlay{
+    display:none;
+    position:fixed;
+    inset:0;
+    background: rgba(7,26,51,0.5);
+    z-index:90;
+  }
+  .nav-overlay.show{ display:block; }
+
+</style>
+</head>
+<body>
+
+<div class="top-strip">Trusted LIC Insurance Agent &nbsp;•&nbsp; Serving Families with Honest Advice Since Years &nbsp;•&nbsp; Call 9137594297</div>
+
+<header>
+  <div class="nav-wrap">
+    <a href="index.html" class="brand" aria-label="Sanjay Kumar Singh - Home">
+      <div class="brand-badge">SK</div>
+      <div class="brand-text">
+        <div class="name">Sanjay Kumar Singh</div>
+        <div class="role">LIC Insurance Agent</div>
+      </div>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="lic.html">LIC's Plans</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="tel:9137594297" class="nav-cta">Call Now</a>
+    </nav>
+  </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero">
+  <div class="container">
+    <div class="inner">
+      <div class="eyebrow">Get In Touch</div>
+      <h1>Let's talk about your <em>plan</em>.</h1>
+      <p class="lede">Whether it's a quick question or a full policy review, I personally reply to every message. Pick whatever's easiest for you below.</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Contact</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT METHOD CARDS (overlapping hero) ============ -->
+<div class="container">
+  <div class="contact-methods">
+    <div class="method-card call">
+      <div class="icon">📞</div>
+      <h3>Call Me</h3>
+      <div class="detail">9137594297</div>
+      <div class="sub">Mon–Sat, 9:00 AM – 7:00 PM</div>
+      <a href="tel:9137594297" class="go-btn">Call Now →</a>
+    </div>
+
+    <div class="method-card wa">
+      <div class="icon">💬</div>
+      <h3>WhatsApp Me</h3>
+      <div class="detail">9137594297</div>
+      <div class="sub">Fastest way to reach me, anytime</div>
+      <a href="https://wa.me/919137594297?text=Hi%20Sanjay%2C%20I%20found%20your%20website%20and%20I%27d%20like%20to%20know%20more%20about%20LIC%20policies." target="_blank" rel="noopener" class="go-btn">Chat on WhatsApp →</a>
+    </div>
+
+    <div class="method-card mail">
+      <div class="icon">✉️</div>
+      <h3>Email Me</h3>
+      <div class="detail" style="font-size:0.95rem;">sksingh2010@gmail.com</div>
+      <div class="sub">For documents &amp; detailed queries</div>
+      <a href="mailto:sksingh2010@gmail.com?subject=Enquiry%20from%20Website" class="go-btn">Send Email →</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ QUICK TOPIC PICKER -> PRELOADED WHATSAPP MESSAGE ============ -->
+<section>
+  <div class="container">
+    <div class="section-head" style="margin:0 auto 40px; text-align:center;">
+      <div class="eyebrow" style="justify-content:center;">Skip the Typing</div>
+      <h2>Tell Me What You Need — I'll Set Up the Message</h2>
+      <p style="margin:14px auto 0;">Pick what brings you here today and I'll preload a WhatsApp message for you — just hit send.</p>
+    </div>
+
+    <div class="quick-topics">
+      <h3>What can I help with?</h3>
+      <p class="hint">Choose one — your WhatsApp message will be ready below.</p>
+
+      <div class="topic-grid" id="topicGrid">
+        <button type="button" class="topic-chip selected" data-msg="Hi Sanjay, I'd like to understand which LIC policy would suit me best. Could you guide me?">
+          <span class="emoji">🛡️</span> New Policy Advice
+        </button>
+        <button type="button" class="topic-chip" data-msg="Hi Sanjay, I'd like a premium quote for an LIC plan. Could you share the details?">
+          <span class="emoji">💰</span> Premium Quote
+        </button>
+        <button type="button" class="topic-chip" data-msg="Hi Sanjay, I'd like to plan for my child's education/future with an LIC child plan. Can we discuss?">
+          <span class="emoji">🎓</span> Child Plan
+        </button>
+        <button type="button" class="topic-chip" data-msg="Hi Sanjay, I need help with an LIC claim. Could you guide me through the process?">
+          <span class="emoji">📄</span> Claim Assistance
+        </button>
+        <button type="button" class="topic-chip" data-msg="Hi Sanjay, I already have an LIC policy and would like you to review it. Can we connect?">
+          <span class="emoji">🔍</span> Policy Review
+        </button>
+        <button type="button" class="topic-chip" data-msg="Hi Sanjay, I have a question that isn't listed here. Can we talk?">
+          <span class="emoji">💭</span> Something Else
+        </button>
+      </div>
+
+      <div class="preview-box">
+        <span class="quote-mark">"</span>
+        <span id="previewText">Hi Sanjay, I'd like to understand which LIC policy would suit me best. Could you guide me?</span>
+      </div>
+
+      <a href="#" id="sendWaBtn" target="_blank" rel="noopener" class="send-wa-btn">
+        💬 Open WhatsApp with This Message
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESPONSE TIME ============ -->
+<div class="container">
+  <div class="response-strip">
+    <span class="pulse-dot"></span>
+    <span>[Placeholder: e.g. "I usually reply within 1–2 hours during working hours."]</span>
+  </div>
+</div>
+
+<!-- ============ FORM + SIDE INFO ============ -->
+<section class="band-paper">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Prefer Writing It Out?</div>
+      <h2>Send Me the Details Directly</h2>
+      <p>Fill this in and it'll open in your email app, addressed to me, ready to send.</p>
+    </div>
+
+    <div class="contact-layout">
+      <!-- FORM -->
+      <form class="form-card" id="contactForm">
+        <h3>Quick Enquiry Form</h3>
+        <p class="hint">No sign-up, no spam — this just opens an email draft for you to send.</p>
+
+        <div class="form-row two-col">
+          <div class="field">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="e.g. Rohit Sharma" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. 98765 43210" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="topic">What is this about?</label>
+          <select id="topic" name="topic">
+            <option>New Policy Advice</option>
+            <option>Premium Quote</option>
+            <option>Child Plan</option>
+            <option>Claim Assistance</option>
+            <option>Policy Review</option>
+            <option>Something Else</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" placeholder="Tell me a little about what you need..." required></textarea>
+        </div>
+
+        <div class="form-submit">
+          <button type="submit" class="btn" style="background:var(--navy); color:#fff;">Send via Email →</button>
+          <span class="note">Opens your default email app</span>
+        </div>
+      </form>
+
+      <!-- SIDE INFO -->
+      <div class="info-stack">
+        <div class="info-card">
+          <h4>🕒 Availability</h4>
+          <div class="hours-row"><span class="day">Monday – Friday</span><span class="time open">9:00 AM – 7:00 PM</span></div>
+          <div class="hours-row"><span class="day">Saturday</span><span class="time open">10:00 AM – 5:00 PM</span></div>
+          <div class="hours-row"><span class="day">Sunday</span><span class="time">By Appointment</span></div>
+          <div class="hours-row"><span class="day">WhatsApp</span><span class="time open">Round the Clock</span></div>
+        </div>
+
+        <div class="info-card light">
+          <h4>📍 Area Served</h4>
+          <p style="font-size:0.92rem; color:var(--ink-soft);">[Placeholder: Add the city/locality you primarily serve, e.g. "Based in [City], serving clients across [nearby areas]."]</p>
+          <div class="area-tags">
+            <span class="area-tag">[Locality 1]</span>
+            <span class="area-tag">[Locality 2]</span>
+            <span class="area-tag">[Locality 3]</span>
+          </div>
+          <div class="placeholder-note">Update with your real branch / office locality names.</div>
+        </div>
+
+        <div class="info-card light">
+          <h4>🪪 Agent Details</h4>
+          <p style="font-size:0.92rem; color:var(--ink-soft); margin-bottom:6px;"><strong style="color:var(--navy);">LIC Agent Code:</strong> [Placeholder]</p>
+          <p style="font-size:0.92rem; color:var(--ink-soft);"><strong style="color:var(--navy);">Branch:</strong> [Placeholder]</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="lic.html">LIC's</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="name">Sanjay Kumar Singh</div>
+        <p>LIC Insurance Agent helping families across the community choose the right life, savings, and protection plans — with honest advice and dependable support.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="lic.html">LIC's Plans</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><a href="tel:9137594297">📞 9137594297</a></li>
+          <li><a href="mailto:sksingh2010@gmail.com">✉️ sksingh2010@gmail.com</a></li>
+          <li><a href="https://wa.me/919137594297" target="_blank" rel="noopener">💬 WhatsApp Me</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © <span id="year"></span> Sanjay Kumar Singh — LIC Insurance Agent. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLOAT BUTTON ============ -->
+<a href="https://wa.me/919137594297" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16.001 3C9.107 3 3.5 8.607 3.5 15.5c0 2.46.71 4.752 1.94 6.69L3 29l7.04-2.39A12.43 12.43 0 0 0 16 28c6.894 0 12.5-5.607 12.5-12.5S22.895 3 16.001 3zm0 22.7c-2.06 0-4.07-.557-5.82-1.61l-.418-.25-4.18 1.42 1.44-4.07-.27-.43A10.16 10.16 0 0 1 5.8 15.5C5.8 9.87 10.37 5.3 16 5.3s10.2 4.57 10.2 10.2-4.57 10.2-10.2 10.2zm5.6-7.64c-.31-.155-1.83-.9-2.11-1.005-.28-.105-.49-.155-.69.155-.2.31-.79 1.005-.97 1.21-.18.205-.36.23-.67.08-.31-.15-1.3-.48-2.48-1.53-.92-.82-1.54-1.83-1.72-2.14-.18-.31-.02-.48.13-.635.15-.15.31-.39.46-.585.155-.2.205-.34.31-.565.105-.225.05-.42-.05-.585-.1-.155-.95-2.29-1.16-2.795-.205-.5-.41-.43-.565-.435-.155-.005-.335-.005-.515-.005-.18 0-.47.07-.72.345-.25.27-.96.945-.96 2.305s.99 2.665 1.13 2.85c.14.18 1.96 2.99 4.75 4.07 2.79 1.08 2.79.72 3.3.675.51-.045 1.65-.675 1.88-1.33.23-.65.23-1.205.16-1.33-.07-.125-.255-.2-.565-.355z"/>
+  </svg>
+</a>
+
+<script>
+  // ===== mobile nav =====
+  const navToggle = document.getElementById('navToggle');
+  const mainNav = document.getElementById('mainNav');
+  const navOverlay = document.getElementById('navOverlay');
+
+  function closeNav(){
+    mainNav.classList.remove('open');
+    navOverlay.classList.remove('show');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }
+
+  navToggle.addEventListener('click', () => {
+    const isOpen = mainNav.classList.toggle('open');
+    navOverlay.classList.toggle('show', isOpen);
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  navOverlay.addEventListener('click', closeNav);
+  mainNav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeNav));
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // ===== WhatsApp number (single source of truth) =====
+  const WA_NUMBER = "919137594297";
+
+  // ===== Topic picker -> preloaded WhatsApp message =====
+  const topicChips = document.querySelectorAll('.topic-chip');
+  const previewText = document.getElementById('previewText');
+  const sendWaBtn = document.getElementById('sendWaBtn');
+
+  function updateWaLink(message){
+    const encoded = encodeURIComponent(message);
+    sendWaBtn.href = `https://wa.me/${WA_NUMBER}?text=${encoded}`;
+  }
+
+  topicChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      topicChips.forEach(c => c.classList.remove('selected'));
+      chip.classList.add('selected');
+      const msg = chip.getAttribute('data-msg');
+      previewText.textContent = msg;
+      updateWaLink(msg);
+    });
+  });
+
+  // initialise with the first chip's message
+  updateWaLink(topicChips[0].getAttribute('data-msg'));
+
+  // ===== Contact form -> mailto =====
+  const contactForm = document.getElementById('contactForm');
+  contactForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    const fullName = document.getElementById('fullName').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const topic = document.getElementById('topic').value;
+    const message = document.getElementById('message').value.trim();
+
+    const subject = `Website Enquiry: ${topic} — ${fullName}`;
+    const body =
+`Name: ${fullName}
+Phone: ${phone}
+Topic: ${topic}
+
+Message:
+${message}`;
+
+    const mailtoUrl = `mailto:sksingh2010@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoUrl;
+  });
+</script>
+
+</body>
+</html>
