@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LIC's Plans | Sanjay Kumar Singh - LIC Insurance Agent</title>
+<meta name="description" content="Explore LIC's life insurance, savings, child education, and pension plans, explained simply by Sanjay Kumar Singh, your local LIC Insurance Agent.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+  /* ============ TOKENS ============ */
+  :root{
+    --navy: #0B2545;
+    --navy-deep: #071a33;
+    --gold: #C9A24B;
+    --gold-light: #E2C77F;
+    --cream: #F7F5F1;
+    --paper: #FFFDF9;
+    --ink: #1E1E1E;
+    --ink-soft: #4A4A48;
+    --line: #D8D2C4;
+    --whatsapp: #3D8361;
+    --whatsapp-deep: #2f684c;
+
+    --display: "Fraunces", Georgia, serif;
+    --body: "Inter", -apple-system, Segoe UI, Roboto, sans-serif;
+
+    --radius: 10px;
+    --container: 1120px;
+  }
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+
+  html{ scroll-behavior:smooth; }
+
+  body{
+    font-family: var(--body);
+    color: var(--ink);
+    background: var(--cream);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img{ max-width:100%; display:block; }
+
+  a{ color:inherit; text-decoration:none; }
+
+  :focus-visible{
+    outline: 3px solid var(--gold);
+    outline-offset: 2px;
+  }
+
+  .container{
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ============ TICKER / TOP STRIP ============ */
+  .top-strip{
+    background: var(--navy-deep);
+    color: var(--gold-light);
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    text-align: center;
+    padding: 7px 14px;
+    font-weight: 500;
+  }
+
+  /* ============ HEADER / NAV ============ */
+  header{
+    background: var(--navy);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 14px rgba(7,26,51,0.18);
+  }
+
+  .nav-wrap{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 14px 24px;
+    max-width: var(--container);
+    margin: 0 auto;
+  }
+
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color: var(--cream);
+  }
+
+  .brand-badge{
+    width:44px; height:44px;
+    border-radius: 50%;
+    background: linear-gradient(155deg, var(--gold-light), var(--gold));
+    color: var(--navy-deep);
+    display:flex; align-items:center; justify-content:center;
+    font-family: var(--display);
+    font-weight:700;
+    font-size:1.05rem;
+    flex-shrink:0;
+    border: 2px solid rgba(255,255,255,0.25);
+  }
+
+  .brand-text .name{
+    font-family: var(--display);
+    font-size: 1.18rem;
+    font-weight:600;
+    letter-spacing: 0.01em;
+    line-height:1.1;
+  }
+
+  .brand-text .role{
+    font-size: 0.72rem;
+    color: var(--gold-light);
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+
+  nav.main-nav{
+    display:flex;
+    align-items:center;
+    gap: 6px;
+  }
+
+  nav.main-nav a{
+    color: rgba(247,245,241,0.88);
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  nav.main-nav a:hover{
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+  }
+
+  nav.main-nav a.active{
+    background: rgba(255,255,255,0.1);
+    color: var(--gold-light);
+  }
+
+  nav.main-nav a.nav-cta{
+    background: var(--gold);
+    color: var(--navy-deep);
+    font-weight:600;
+    margin-left: 6px;
+  }
+
+  nav.main-nav a.nav-cta:hover{
+    background: var(--gold-light);
+  }
+
+  /* mobile nav toggle */
+  .nav-toggle{
+    display:none;
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding: 8px;
+  }
+  .nav-toggle span{
+    display:block;
+    width:26px; height:2px;
+    background: var(--cream);
+    margin: 6px 0;
+    transition: 0.25s;
+  }
+
+  /* ============ PAGE HERO (compact, for inner pages) ============ */
+  .page-hero{
+    background:
+      radial-gradient(circle at 85% 20%, rgba(201,162,75,0.16), transparent 55%),
+      linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);
+    color: var(--cream);
+    padding: 56px 0 64px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .page-hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image: repeating-linear-gradient(
+      0deg, rgba(255,255,255,0.025) 0px, rgba(255,255,255,0.025) 1px, transparent 1px, transparent 34px
+    );
+    pointer-events:none;
+  }
+
+  .page-hero .inner{
+    position:relative;
+    z-index:1;
+    max-width: 660px;
+  }
+
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    color: var(--gold-light);
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight:600;
+    margin-bottom: 18px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:28px; height:1px;
+    background: var(--gold-light);
+  }
+
+  .page-hero h1{
+    font-family: var(--display);
+    font-size: clamp(2rem, 4vw, 2.9rem);
+    font-weight:600;
+    line-height:1.16;
+    margin-bottom: 14px;
+  }
+
+  .page-hero h1 em{
+    font-style: italic;
+    color: var(--gold-light);
+    font-weight:500;
+  }
+
+  .page-hero p.lede{
+    font-size: 1.05rem;
+    color: rgba(247,245,241,0.82);
+  }
+
+  .breadcrumb{
+    display:flex;
+    gap:8px;
+    align-items:center;
+    font-size:0.85rem;
+    color: rgba(247,245,241,0.55);
+    margin-top: 22px;
+  }
+  .breadcrumb a{ color: rgba(247,245,241,0.8); }
+  .breadcrumb a:hover{ color: var(--gold-light); }
+
+  /* quick category chips inside hero */
+  .hero-chip-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap: 10px;
+    margin-top: 28px;
+  }
+  .hero-chip-row a{
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    color: var(--cream);
+    font-size: 0.85rem;
+    font-weight:600;
+    padding: 9px 16px;
+    border-radius: 999px;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .hero-chip-row a:hover{
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--navy-deep);
+  }
+
+  /* ============ SECTION GENERIC ============ */
+  section{
+    padding: 84px 0;
+  }
+
+  .section-head{
+    max-width: 640px;
+    margin-bottom: 44px;
+  }
+
+  .section-head .eyebrow{ color: var(--whatsapp-deep); }
+  .section-head .eyebrow::before{ background: var(--whatsapp-deep); }
+
+  .section-head h2{
+    font-family: var(--display);
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight:600;
+    color: var(--navy);
+    line-height:1.2;
+  }
+
+  .section-head p{
+    color: var(--ink-soft);
+    margin-top: 14px;
+    font-size: 1.02rem;
+  }
+
+  /* alternate band backgrounds for plan categories */
+  .band-paper{
+    background: var(--paper);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  /* ============ PLAN CARD GRID ============ */
+  .plans-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .plan-card{
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 28px 26px;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+  }
+
+  .band-paper .plan-card{
+    background: #fff;
+  }
+
+  .plan-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 18px 36px rgba(11,37,69,0.1);
+    border-color: var(--gold);
+  }
+
+  .plan-card .top-row{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    margin-bottom: 16px;
+  }
+
+  .plan-card .icon{
+    width: 48px; height:48px;
+    border-radius: 10px;
+    background: var(--navy);
+    color: var(--gold-light);
+    display:flex; align-items:center; justify-content:center;
+    font-size: 1.25rem;
+    flex-shrink:0;
+  }
+
+  .plan-tag{
+    font-size: 0.68rem;
+    font-weight:700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background: rgba(61,131,97,0.12);
+    color: var(--whatsapp-deep);
+    white-space:nowrap;
+  }
+
+  .plan-card h3{
+    font-family: var(--display);
+    font-size: 1.14rem;
+    color: var(--navy);
+    margin-bottom: 8px;
+    font-weight:600;
+  }
+
+  .plan-card .plan-blurb{
+    color: var(--ink-soft);
+    font-size: 0.93rem;
+    margin-bottom: 16px;
+  }
+
+  .plan-meta{
+    list-style:none;
+    display:grid;
+    gap: 8px;
+    font-size: 0.86rem;
+    margin-bottom: 18px;
+    border-top: 1px dashed var(--line);
+    padding-top: 14px;
+  }
+
+  .plan-meta li{
+    display:flex;
+    justify-content:space-between;
+    gap: 10px;
+    color: var(--ink-soft);
+  }
+
+  .plan-meta li span.label{ color: var(--ink-soft); }
+  .plan-meta li span.value{ font-weight:600; color: var(--navy); text-align:right; }
+
+  .plan-card .plan-cta{
+    margin-top: auto;
+    display:flex;
+    gap: 10px;
+  }
+
+  .plan-cta a{
+    flex:1;
+    text-align:center;
+    font-size: 0.86rem;
+    font-weight:600;
+    padding: 10px 12px;
+    border-radius: 7px;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+  }
+
+  .plan-cta a.ask{
+    background: var(--navy);
+    color: #fff;
+  }
+  .plan-cta a.ask:hover{ background: var(--navy-deep); }
+
+  .plan-cta a.wa{
+    border: 1.5px solid var(--line);
+    color: var(--whatsapp-deep);
+  }
+  .plan-cta a.wa:hover{
+    border-color: var(--whatsapp);
+    background: rgba(61,131,97,0.08);
+  }
+
+  .placeholder-note{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    background: rgba(201,162,75,0.12);
+    border: 1px dashed var(--gold);
+    color: var(--navy);
+    font-size: 0.72rem;
+    font-weight:600;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-bottom: 14px;
+  }
+  .placeholder-note::before{ content:"✏️"; }
+
+  /* ============ HOW TO CHOOSE / PROCESS ============ */
+  .steps-grid{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+
+  .step-card{
+    text-align:center;
+    padding: 10px;
+  }
+
+  .step-num{
+    width: 46px; height:46px;
+    border-radius:50%;
+    background: var(--navy);
+    color: var(--gold-light);
+    display:flex; align-items:center; justify-content:center;
+    font-family: var(--display);
+    font-weight:700;
+    font-size: 1.1rem;
+    margin: 0 auto 14px;
+  }
+
+  .step-card h3{
+    font-family: var(--display);
+    font-size: 1.05rem;
+    color: var(--navy);
+    margin-bottom: 8px;
+    font-weight:600;
+  }
+
+  .step-card p{
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+  }
+
+  /* ============ FAQ ============ */
+  .faq-list{
+    max-width: 760px;
+    margin: 0 auto;
+    display:grid;
+    gap: 14px;
+  }
+
+  .faq-item{
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow:hidden;
+  }
+
+  .faq-item summary{
+    list-style:none;
+    cursor:pointer;
+    padding: 18px 22px;
+    font-weight:600;
+    color: var(--navy);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap: 14px;
+    font-size: 0.98rem;
+  }
+
+  .faq-item summary::-webkit-details-marker{ display:none; }
+
+  .faq-item summary .plus{
+    flex-shrink:0;
+    width: 26px; height:26px;
+    border-radius:50%;
+    background: rgba(11,37,69,0.06);
+    color: var(--navy);
+    display:flex; align-items:center; justify-content:center;
+    font-size: 1.1rem;
+    transition: transform 0.2s, background 0.2s;
+  }
+
+  .faq-item[open] summary .plus{
+    transform: rotate(45deg);
+    background: var(--gold);
+    color: var(--navy-deep);
+  }
+
+  .faq-item .faq-body{
+    padding: 0 22px 20px;
+    color: var(--ink-soft);
+    font-size: 0.94rem;
+  }
+
+  /* ============ CONTACT PREVIEW STRIP ============ */
+  .contact-strip{
+    background: linear-gradient(135deg, var(--whatsapp-deep), var(--whatsapp));
+    color: #fff;
+    border-radius: 18px;
+    padding: 48px 46px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap: 30px;
+    flex-wrap:wrap;
+  }
+
+  .contact-strip h2{
+    font-family: var(--display);
+    font-size: clamp(1.5rem, 2.6vw, 2rem);
+    font-weight:600;
+    margin-bottom: 8px;
+  }
+
+  .contact-strip p{
+    color: rgba(255,255,255,0.88);
+    font-size: 1rem;
+  }
+
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding: 14px 26px;
+    border-radius: 7px;
+    font-weight:600;
+    font-size: 0.98rem;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    border: none;
+    cursor:pointer;
+  }
+
+  .btn-primary{
+    background: var(--gold);
+    color: var(--navy-deep);
+  }
+  .btn-primary:hover{
+    background: var(--gold-light);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(201,162,75,0.28);
+  }
+
+  .btn-outline{
+    background: transparent;
+    color: var(--cream);
+    border: 1.5px solid rgba(247,245,241,0.45);
+  }
+  .btn-outline:hover{
+    border-color: var(--gold-light);
+    color: var(--gold-light);
+    transform: translateY(-2px);
+  }
+
+  .contact-strip .btn-primary{
+    background:#fff;
+    color: var(--whatsapp-deep);
+  }
+  .contact-strip .btn-primary:hover{
+    background: var(--cream);
+  }
+
+  .contact-strip .btn-outline{
+    border-color: rgba(255,255,255,0.55);
+  }
+  .contact-strip .btn-outline:hover{
+    border-color:#fff;
+    color:#fff;
+  }
+
+  /* ============ DISCLAIMER STRIP ============ */
+  .disclaimer{
+    background: var(--navy-deep);
+    color: rgba(247,245,241,0.65);
+    font-size: 0.82rem;
+    padding: 22px 0;
+    text-align:center;
+  }
+  .disclaimer .container{ max-width: 880px; }
+
+  /* ============ FOOTER ============ */
+  footer{
+    background: var(--navy-deep);
+    color: rgba(247,245,241,0.78);
+    padding-top: 56px;
+  }
+
+  .footer-nav{
+    display:flex;
+    justify-content:center;
+    gap: 6px;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(247,245,241,0.12);
+    margin-bottom: 30px;
+  }
+
+  .footer-nav a{
+    color: var(--cream);
+    font-weight:600;
+    font-size: 0.98rem;
+    padding: 12px 26px;
+    border: 1px solid rgba(247,245,241,0.18);
+    border-radius: 8px;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+  }
+
+  .footer-nav a:hover{
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--navy-deep);
+  }
+
+  .footer-grid{
+    display:grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+  }
+
+  .footer-brand .name{
+    font-family: var(--display);
+    color: var(--cream);
+    font-size: 1.2rem;
+    font-weight:600;
+    margin-bottom: 10px;
+  }
+
+  .footer-brand p{
+    font-size: 0.92rem;
+    max-width: 320px;
+    line-height: 1.7;
+  }
+
+  .footer-col h4{
+    color: var(--cream);
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    font-weight:600;
+  }
+
+  .footer-col ul{
+    list-style:none;
+    display:grid;
+    gap: 10px;
+    font-size: 0.92rem;
+  }
+
+  .footer-col a:hover{ color: var(--gold-light); }
+
+  .footer-bottom{
+    text-align:center;
+    font-size: 0.82rem;
+    padding: 22px 0;
+    border-top: 1px solid rgba(247,245,241,0.1);
+    color: rgba(247,245,241,0.5);
+  }
+
+  /* ============ WHATSAPP FLOAT BUTTON ============ */
+  .whatsapp-float{
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 999;
+    background: var(--whatsapp);
+    color:#fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow: 0 10px 26px rgba(0,0,0,0.28);
+    transition: transform 0.2s, background 0.2s;
+    animation: wa-pulse 2.6s infinite;
+  }
+
+  .whatsapp-float:hover{
+    background: var(--whatsapp-deep);
+    transform: scale(1.07);
+  }
+
+  .whatsapp-float svg{ width: 30px; height:30px; }
+
+  @keyframes wa-pulse{
+    0%   { box-shadow: 0 10px 26px rgba(0,0,0,0.28), 0 0 0 0 rgba(61,131,97,0.45); }
+    70%  { box-shadow: 0 10px 26px rgba(0,0,0,0.28), 0 0 0 14px rgba(61,131,97,0); }
+    100% { box-shadow: 0 10px 26px rgba(0,0,0,0.28), 0 0 0 0 rgba(61,131,97,0); }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .whatsapp-float{ animation: none; }
+    *{ scroll-behavior:auto !important; }
+  }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 980px){
+    .plans-grid{ grid-template-columns: repeat(2, 1fr); }
+    .steps-grid{ grid-template-columns: repeat(2, 1fr); }
+    .footer-grid{ grid-template-columns: 1fr 1fr; }
+    .footer-brand{ grid-column: 1 / -1; }
+  }
+
+  @media (max-width: 760px){
+    nav.main-nav{
+      position: fixed;
+      top: 0; right: 0;
+      height: 100vh;
+      width: min(78vw, 320px);
+      background: var(--navy-deep);
+      flex-direction: column;
+      align-items: stretch;
+      justify-content:flex-start;
+      padding: 90px 24px 24px;
+      gap: 4px;
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+      box-shadow: -8px 0 30px rgba(0,0,0,0.3);
+    }
+    nav.main-nav.open{ transform: translateX(0); }
+    nav.main-nav a{ padding: 14px 16px; font-size:1.02rem; }
+    nav.main-nav a.nav-cta{ margin-left:0; margin-top: 10px; text-align:center; }
+    .nav-toggle{ display:block; }
+
+    .page-hero{ padding: 44px 0 48px; }
+
+    section{ padding: 56px 0; }
+    .plans-grid{ grid-template-columns: 1fr; }
+    .steps-grid{ grid-template-columns: 1fr 1fr; }
+    .contact-strip{ padding: 34px 26px; flex-direction:column; text-align:center; }
+    .contact-strip > div:last-child{ display:flex; gap:12px; flex-direction:column; width:100%; }
+    .footer-grid{ grid-template-columns: 1fr; gap: 28px; }
+    .footer-nav{ gap: 10px; }
+    .footer-nav a{ padding: 10px 18px; font-size:0.9rem; }
+    .whatsapp-float{ bottom:18px; right:18px; width:56px; height:56px; }
+  }
+
+  @media (max-width: 420px){
+    .brand-text .name{ font-size: 1.02rem; }
+    .page-hero h1{ font-size: 1.7rem; }
+    .steps-grid{ grid-template-columns: 1fr; }
+  }
+
+  /* overlay for mobile nav */
+  .nav-overlay{
+    display:none;
+    position:fixed;
+    inset:0;
+    background: rgba(7,26,51,0.5);
+    z-index:90;
+  }
+  .nav-overlay.show{ display:block; }
+
+</style>
+</head>
+<body>
+
+<div class="top-strip">Trusted LIC Insurance Agent &nbsp;•&nbsp; Serving Families with Honest Advice Since Years &nbsp;•&nbsp; Call 9137594297</div>
+
+<header>
+  <div class="nav-wrap">
+    <a href="index.html" class="brand" aria-label="Sanjay Kumar Singh - Home">
+      <div class="brand-badge">SK</div>
+      <div class="brand-text">
+        <div class="name">Sanjay Kumar Singh</div>
+        <div class="role">LIC Insurance Agent</div>
+      </div>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="lic.html" class="active">LIC's Plans</a>
+      <a href="contact.html">Contact</a>
+      <a href="tel:9137594297" class="nav-cta">Call Now</a>
+    </nav>
+  </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero">
+  <div class="container">
+    <div class="inner">
+      <div class="eyebrow">LIC's Plans</div>
+      <h1>A plan for every <em>stage</em> of life.</h1>
+      <p class="lede">From protecting your family to building savings, funding your child's education, or planning a comfortable retirement — here's an overview of LIC's plans I can help you with.</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>LIC's Plans</span>
+      </div>
+      <div class="hero-chip-row">
+        <a href="#protection">Protection Plans</a>
+        <a href="#savings">Savings &amp; Endowment</a>
+        <a href="#child">Child Plans</a>
+        <a href="#pension">Pension &amp; Retirement</a>
+        <a href="#ulip">ULIP Plans</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROTECTION PLANS ============ -->
+<section id="protection">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Protection Plans</div>
+      <h2>Term &amp; Whole Life Insurance</h2>
+      <p>Pure protection plans that give your family a financial safety net at an affordable premium — ideal if your main goal is maximum cover at low cost.</p>
+    </div>
+
+    <div class="placeholder-note">Plan names, sum assured ranges &amp; terms below are placeholders — replace with current LIC plan details.</div>
+
+    <div class="plans-grid">
+      <div class="plan-card">
+        <div class="top-row">
+          <div class="icon">🛡️</div>
+          <span class="plan-tag">Term Plan</span>
+        </div>
+        <h3>[Placeholder: LIC Term Plan Name]</h3>
+        <p class="plan-blurb">[Placeholder: 1–2 line description — e.g. "A pure protection plan offering high life cover at affordable premiums for a fixed term."]</p>
+        <ul class="plan-meta">
+          <li><span class="label">Entry Age</span><span class="value">[18–65 yrs]</span></li>
+          <li><span class="label">Policy Term</span><span class="value">[10–40 yrs]</span></li>
+          <li><span class="label">Sum Assured</span><span class="value">[₹ X Lakh+]</span></li>
+        </ul>
+        <div class="plan-cta">
+          <a href="contact.html" class="ask">Ask About This</a>
+          <a href="https://wa.me/919137594297" target="_blank" rel="noopener" class="wa">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="plan-card">
+        <div class="top-row">
+          <div class="icon">🏠</div>
+          <span class="plan-tag">Whole Life</span>
+        </div>
+        <h3>[Placeholder: LIC Whole Life Plan Name]</h3>
+        <p class="plan-blurb">[Placeholder: e.g. "Provides life cover for the whole of life, with the sum assured payable to your family whenever the unfortunate happens."]</p>
+        <ul class="plan-meta">
+          <li><span class="label">Entry Age</span><span class="value">[18–60 yrs]</span></li>
+          <li><span class="label">Coverage</span><span class="value">[Whole Life]</span></li>
+          <li><span class="label">Premium Mode</span><span class="value">[Limited / Regular]</span></li>
+        </ul>
+        <div class="plan-cta">
+          <a href="contact.html" class="ask">Ask About This</a>
+          <a href="https://wa.me/919137594297" target="_blank" rel="noopener" class="wa">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="plan-card">
+        <div class="top-row">
+          <div class="icon">👨‍👩‍👧</div>
+          <span class="plan-tag">Family Income</span>
+        </div>
+        <h3>[Placeholder: LIC Income Benefit Plan Name]</h3>
+        <p class="plan-blurb">[Placeholder: e.g. "Pays out a regular income to your family in addition to the lump sum, in case of an unfortunate event."]</p>
+        <ul class="plan-meta">
+          <li><span class="label">Entry Age</span><span class="value">[18–55 yrs]</span></li>
+          <li><span class="label">Payout</span><span class="value">[Lump Sum + Income]</span></li>
+          <li><span class="label">Policy Term</span><span class="value">[10–35 yrs]</span></li>
+        </ul>
+        <div class="plan-cta">
+          <a href="contact.html" class="ask">Ask About This</a>
+          <a href="https://wa.me/919137594297" target="_blank" rel="noopener" class="wa">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SAVINGS & ENDOWMENT PLANS ============ -->
+<section id="savings" class="band-paper">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Savings &amp; Endowment</div>
+      <h2>Save &amp; Stay Protected</h2>
+      <p>Endowment and money-back plans combine life cover with disciplined savings — you get a payout on maturity, plus protection along the way.</p>
+    </div>
+
+    <div class="plans-grid">
+      <div class="plan-card">
+        <div class="top-row">
+          <div class="icon">💰</div>
+          <span class="plan-tag">Endowment</span>
+        </div>
+        <h3>[Placeholder: LIC Endowment Plan Name]</h3>
+        <p class="plan-blurb">[Placeholder: e.g. "A with-profits plan that builds a lump sum for the future while covering your life throughout the term."]</p>
+        <ul class="plan-meta">
+          <li><span class="label">Entry Age</span><span class="value">[8–55 yrs]</span></li>
+          <li><span class="label">Policy Term</span><span class="value">[12–35 yrs]</span></li>
+          <li><span class="label">Bonus</span><span class="value">[Simple Reversionary]</span></li>
+        </ul>
+        <div class="plan-cta">
+          <a href="contact.html" class="ask">Ask About This</a>
+          <a href="https://wa.me/919137594297" target="_blank" rel="noopener" class="wa">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="plan-card">
+        <div class="top-row">
+          <div class="icon">🔁</div>
+          <span class="plan-tag">Money Back</span>
+        </div>
+        <h3>[Placeholder: LIC Money Back Plan Name]</h3>
+        <p class="plan-blurb">[Placeholder: e.g. "Pays a percentage of the sum assured at regular intervals during the term, with the balance plus bonus at maturity."]</p>
+        <ul class="plan-meta">
+          <li><span class="label">Entry Age</span><span class="value">[13–50 yrs]</span></li>
+          <li><span class="label">Survival Benefit</span><span class="value">[Periodic Payouts]</span></li>
+          <li><span class="label">Policy Term</span><span class="value">[20 / 25 yrs]</span></li>
+        </ul>
+        <div class="plan-cta">
+          <a href="contact.html" class="ask">Ask About This</a>
+          <a href="https://wa.me/919137594297" target="_blank" rel="noopener" class="wa">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="plan-card">
+        <div class="top-row">
+          <div class="icon">📈</div>
+          <span class="plan-tag">Guaranteed Savings</span>
+        </div>
+        <h3>[Placeholder: LIC Guaranteed Savings Plan Name]</h3>
+        <p class="plan-blurb">[Placeholder: e.g. "A non-linked plan offering guaranteed additions year-on-year along with life cover."]</p>
+        <ul class="plan-meta">
+          <li><span class="label">Entry Age</span><span class="value">[90 days–65 yrs]</span></li>
+          <li><span class="label">Returns</span><span class="value">[Guaranteed Additions]</span></li>
+          <li><span class="label">Policy Term</span><span class="value">[12–20 yrs]</span></li>
+        </ul>
+        <div class="plan-cta">
+          <a href="contact.html" class="ask">Ask About This</a>
+          <a href="https://wa.me/919137594297" target="_blank" rel="noopener" class="wa">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHILD PLANS ============ -->
+<section id="child">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Child Plans</div>
+      <h2>Plan Ahead for Your Child's Future</h2>
+      <p>These plans help you build a fund for school, college, or marriage expenses — paying out at key milestones, regardless of what happens to the parent.</p>
+    </div>
+
+    <div class="plans-grid">
+      <div class="plan-card">
+        <div class="top-row">
+          <div class="icon">🎓</div>
+          <span class="plan-tag">Education</span>
+        </div>
+        <h3>[Placeholder: LIC Child Education Plan Name]</h3>
+        <p class="plan-blurb">[Placeholder: e.g. "Designed to fund your child's higher education with payouts timed around college years."]</p>
+        <ul class="plan-meta">
+          <li><span class="label">Child's Age</span><span class="value">[0–17 yrs]</span></li>
+          <li><span class="label">Payout Stage</span><span class="value">[18 / 20 / 22 yrs]</span></li>
+          <li><span class="label">Premium Waiver</span><span class="value">[On Parent's Demise]</span></li>
+        </ul>
+        <div class="plan-cta">
+          <a href="contact.html" class="ask">Ask About This</a>
+          <a href="https://wa.me/919137594297" target="_blank" rel="noopener" class="wa">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="plan-card">
+        <div class="top-row">
+          <div class="icon">💍</div>
+          <span class="plan-tag">Marriage Fund</span>
+        </div>
+        <h3>[Placeholder: LIC Marriage / Future Plan Name]</h3>
+        <p class="plan-blurb">[Placeholder: e.g. "Helps build a fund for your child's marriage expenses, with flexible payout options."]</p>
+        <ul class="plan-meta">
+          <li><span class="label">Child's Age</span><span class="value">[0–17 yrs]</span></li>
+          <li><span class="label">Maturity Age</span><span class="value">[20–25 yrs]</span></li>
+          <li><span class="label">Cover Type</span><span class="value">[With Profits]</span></li>
+        </ul>
+        <div class="plan-cta">
+          <a href="contact.html" class="ask">Ask About This</a>
+          <a href="https://wa.me/919137594297" target="_blank" rel="noopener" class="wa">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="plan-card">
+        <div class="top-row">
+          <div class="icon">🧒</div>
+          <span class="plan-tag">Young Achiever</span>
+        </div>
+        <h3>[Placeholder: LIC Jeevan/Child Plan Name]</h3>
+        <p class="plan-blurb">[Placeholder: e.g. "Combines savings with built-in protection so your child's plans stay on track no matter what."]</p>
+        <ul class="plan-meta">
+          <li><span class="label">Child's Age</span><span class="value">[0–12 yrs]</span></li>
+          <li><span class="label">Policy Term</span><span class="value">[Up to 25 yrs]</span></li>
+          <li><span class="label">Bonus</span><span class="value">[Reversionary + FAB]</span></li>
+        </ul>
+        <div class="plan-cta">
+          <a href="contact.html" class="ask">Ask About This</a>
+          <a href="https://wa.me/919137594297" target="_blank" rel="noopener" class="wa">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PENSION & RETIREMENT ============ -->
+<section id="pension" class="band-paper">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Pension &amp; Retirement</div>
+      <h2>A Steady Income After Retirement</h2>
+      <p>Pension plans help you build a corpus during your working years and convert it into a regular income once you retire — so your lifestyle doesn't have to change.</p>
+    </div>
+
+    <div class="plans-grid">
+      <div class="plan-card">
+        <div class="top-row">
+          <div class="icon">🧓</div>
+          <span class="plan-tag">Immediate Annuity</span>
+        </div>
+        <h3>[Placeholder: LIC Immediate Annuity Plan Name]</h3>
+        <p class="plan-blurb">[Placeholder: e.g. "Pay a lump sum once and start receiving a guaranteed pension immediately, for life."]</p>
+        <ul class="plan-meta">
+          <li><span class="label">Entry Age</span><span class="value">[30–85 yrs]</span></li>
+          <li><span class="label">Annuity Options</span><span class="value">[Multiple]</span></li>
+          <li><span class="label">Payout Frequency</span><span class="value">[Monthly/Yearly]</span></li>
+        </ul>
+        <div class="plan-cta">
+          <a href="contact.html" class="ask">Ask About This</a>
+          <a href="https://wa.me/919137594297" target="_blank" rel="noopener" class="wa">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="plan-card">
+        <div class="top-row">
+          <div class="icon">📊</div>
+          <span class="plan-tag">Deferred Pension</span>
+        </div>
+        <h3>[Placeholder: LIC Deferred Pension Plan Name]</h3>
+        <p class="plan-blurb">[Placeholder: e.g. "Build a retirement corpus over the years, then convert it into a regular pension at vesting age."]</p>
+        <ul class="plan-meta">
+          <li><span class="label">Entry Age</span><span class="value">[25–65 yrs]</span></li>
+          <li><span class="label">Vesting Age</span><span class="value">[55–80 yrs]</span></li>
+          <li><span class="label">Premium Mode</span><span class="value">[Regular/Single]</span></li>
+        </ul>
+        <div class="plan-cta">
+          <a href="contact.html" class="ask">Ask About This</a>
+          <a href="https://wa.me/919137594297" target="_blank" rel="noopener" class="wa">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="plan-card">
+        <div class="top-row">
+          <div class="icon">🏖️</div>
+          <span class="plan-tag">Senior Citizen</span>
+        </div>
+        <h3>[Placeholder: LIC Senior Citizen Plan Name]</h3>
+        <p class="plan-blurb">[Placeholder: e.g. "A simple, guaranteed-return savings option designed for senior citizens looking for safety and steady payouts."]</p>
+        <ul class="plan-meta">
+          <li><span class="label">Entry Age</span><span class="value">[60 yrs+]</span></li>
+          <li><span class="label">Returns</span><span class="value">[Guaranteed]</span></li>
+          <li><span class="label">Tenure</span><span class="value">[As per plan]</span></li>
+        </ul>
+        <div class="plan-cta">
+          <a href="contact.html" class="ask">Ask About This</a>
+          <a href="https://wa.me/919137594297" target="_blank" rel="noopener" class="wa">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ULIP PLANS ============ -->
+<section id="ulip">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">ULIP Plans</div>
+      <h2>Insurance with Market-Linked Growth</h2>
+      <p>Unit Linked Insurance Plans combine life cover with investment in market-linked funds — suited if you're comfortable with some risk for potentially higher returns.</p>
+    </div>
+
+    <div class="plans-grid">
+      <div class="plan-card">
+        <div class="top-row">
+          <div class="icon">📉📈</div>
+          <span class="plan-tag">ULIP</span>
+        </div>
+        <h3>[Placeholder: LIC ULIP Plan Name]</h3>
+        <p class="plan-blurb">[Placeholder: e.g. "Offers life cover along with the choice to invest across equity, debt, or balanced funds based on your risk appetite."]</p>
+        <ul class="plan-meta">
+          <li><span class="label">Entry Age</span><span class="value">[90 days–65 yrs]</span></li>
+          <li><span class="label">Fund Options</span><span class="value">[Equity / Debt / Balanced]</span></li>
+          <li><span class="label">Lock-in</span><span class="value">[5 Years]</span></li>
+        </ul>
+        <div class="plan-cta">
+          <a href="contact.html" class="ask">Ask About This</a>
+          <a href="https://wa.me/919137594297" target="_blank" rel="noopener" class="wa">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="plan-card">
+        <div class="top-row">
+          <div class="icon">🩺</div>
+          <span class="plan-tag">Health Rider</span>
+        </div>
+        <h3>[Placeholder: LIC Health/Critical Illness Rider]</h3>
+        <p class="plan-blurb">[Placeholder: e.g. "Add this rider to an existing policy for extra payout in case of critical illness diagnosis or hospitalisation."]</p>
+        <ul class="plan-meta">
+          <li><span class="label">Attach To</span><span class="value">[Eligible Base Plans]</span></li>
+          <li><span class="label">Coverage</span><span class="value">[Critical Illness]</span></li>
+          <li><span class="label">Extra Premium</span><span class="value">[Nominal]</span></li>
+        </ul>
+        <div class="plan-cta">
+          <a href="contact.html" class="ask">Ask About This</a>
+          <a href="https://wa.me/919137594297" target="_blank" rel="noopener" class="wa">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="plan-card">
+        <div class="top-row">
+          <div class="icon">📄</div>
+          <span class="plan-tag">Term Rider</span>
+        </div>
+        <h3>[Placeholder: LIC Accidental/Term Rider]</h3>
+        <p class="plan-blurb">[Placeholder: e.g. "Boost your base policy's cover with extra protection against accidental death or disability, at low added cost."]</p>
+        <ul class="plan-meta">
+          <li><span class="label">Attach To</span><span class="value">[Eligible Base Plans]</span></li>
+          <li><span class="label">Benefit</span><span class="value">[Accidental Death/Disability]</span></li>
+          <li><span class="label">Extra Premium</span><span class="value">[Low]</span></li>
+        </ul>
+        <div class="plan-cta">
+          <a href="contact.html" class="ask">Ask About This</a>
+          <a href="https://wa.me/919137594297" target="_blank" rel="noopener" class="wa">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW TO CHOOSE ============ -->
+<section class="band-paper">
+  <div class="container">
+    <div class="section-head" style="margin:0 auto 48px; text-align:center;">
+      <div class="eyebrow" style="justify-content:center;">Not Sure Which One?</div>
+      <h2>How I Help You Decide</h2>
+      <p style="margin:14px auto 0;">No need to figure this out alone — here's how we'll find the right plan together.</p>
+    </div>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h3>Understand Your Needs</h3>
+        <p>We talk about your goals — protection, savings, child's future, or retirement.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h3>Compare Suitable Plans</h3>
+        <p>I shortlist 2–3 plans that genuinely fit your budget and goals — no upselling.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h3>Explain in Plain Terms</h3>
+        <p>I walk you through premiums, benefits, and terms in simple language.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <h3>Ongoing Support</h3>
+        <p>From application to claims, I stay involved for the life of your policy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section>
+  <div class="container">
+    <div class="section-head" style="margin:0 auto 40px; text-align:center;">
+      <div class="eyebrow" style="justify-content:center;">Common Questions</div>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>Which LIC plan is best for me?<span class="plus">+</span></summary>
+        <div class="faq-body">[Placeholder: Short answer — e.g. "It depends on your goal: pure protection, savings, child's education, or retirement. Call or WhatsApp me and I'll suggest 2–3 suitable options based on your age, budget, and goals."]</div>
+      </details>
+      <details class="faq-item">
+        <summary>How much premium will I need to pay?<span class="plus">+</span></summary>
+        <div class="faq-body">[Placeholder: Short answer — e.g. "Premiums depend on your age, sum assured, and policy term. Share these details and I'll share an exact premium quote."]</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can I get a plan reviewed if I already have one?<span class="plus">+</span></summary>
+        <div class="faq-body">[Placeholder: Short answer — e.g. "Yes, I'm happy to review your existing LIC policy and tell you honestly whether it still fits your needs."]</div>
+      </details>
+      <details class="faq-item">
+        <summary>How do I file a claim?<span class="plus">+</span></summary>
+        <div class="faq-body">[Placeholder: Short answer — e.g. "Reach out to me directly — I'll guide you through the documents needed and follow up with LIC on your behalf."]</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT PREVIEW ============ -->
+<section class="band-paper">
+  <div class="container">
+    <div class="contact-strip">
+      <div>
+        <h2>Ready to find the right plan?</h2>
+        <p>Tell me your goal — protection, savings, or retirement — and I'll suggest the best fit.</p>
+      </div>
+      <div style="display:flex; gap:14px; flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn-primary">Contact Me</a>
+        <a href="https://wa.me/919137594297" target="_blank" rel="noopener" class="btn btn-outline">WhatsApp Me</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DISCLAIMER ============ -->
+<div class="disclaimer">
+  <div class="container">
+    [Placeholder: Add standard LIC disclaimer text here — e.g. "Insurance is the subject matter of solicitation. Plan names, benefits, and terms mentioned above are for general understanding only. Please refer to the official LIC policy document / brochure for exact terms, conditions, exclusions, and benefits before purchase."]
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="lic.html">LIC's</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="name">Sanjay Kumar Singh</div>
+        <p>LIC Insurance Agent helping families across the community choose the right life, savings, and protection plans — with honest advice and dependable support.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="lic.html">LIC's Plans</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><a href="tel:9137594297">📞 9137594297</a></li>
+          <li><a href="mailto:sksingh2010@gmail.com">✉️ sksingh2010@gmail.com</a></li>
+          <li><a href="https://wa.me/919137594297" target="_blank" rel="noopener">💬 WhatsApp Me</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © <span id="year"></span> Sanjay Kumar Singh — LIC Insurance Agent. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLOAT BUTTON ============ -->
+<a href="https://wa.me/919137594297" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16.001 3C9.107 3 3.5 8.607 3.5 15.5c0 2.46.71 4.752 1.94 6.69L3 29l7.04-2.39A12.43 12.43 0 0 0 16 28c6.894 0 12.5-5.607 12.5-12.5S22.895 3 16.001 3zm0 22.7c-2.06 0-4.07-.557-5.82-1.61l-.418-.25-4.18 1.42 1.44-4.07-.27-.43A10.16 10.16 0 0 1 5.8 15.5C5.8 9.87 10.37 5.3 16 5.3s10.2 4.57 10.2 10.2-4.57 10.2-10.2 10.2zm5.6-7.64c-.31-.155-1.83-.9-2.11-1.005-.28-.105-.49-.155-.69.155-.2.31-.79 1.005-.97 1.21-.18.205-.36.23-.67.08-.31-.15-1.3-.48-2.48-1.53-.92-.82-1.54-1.83-1.72-2.14-.18-.31-.02-.48.13-.635.15-.15.31-.39.46-.585.155-.2.205-.34.31-.565.105-.225.05-.42-.05-.585-.1-.155-.95-2.29-1.16-2.795-.205-.5-.41-.43-.565-.435-.155-.005-.335-.005-.515-.005-.18 0-.47.07-.72.345-.25.27-.96.945-.96 2.305s.99 2.665 1.13 2.85c.14.18 1.96 2.99 4.75 4.07 2.79 1.08 2.79.72 3.3.675.51-.045 1.65-.675 1.88-1.33.23-.65.23-1.205.16-1.33-.07-.125-.255-.2-.565-.355z"/>
+  </svg>
+</a>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const mainNav = document.getElementById('mainNav');
+  const navOverlay = document.getElementById('navOverlay');
+
+  function closeNav(){
+    mainNav.classList.remove('open');
+    navOverlay.classList.remove('show');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }
+
+  navToggle.addEventListener('click', () => {
+    const isOpen = mainNav.classList.toggle('open');
+    navOverlay.classList.toggle('show', isOpen);
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  navOverlay.addEventListener('click', closeNav);
+  mainNav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeNav));
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
